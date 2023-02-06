@@ -4,14 +4,39 @@
 
     <HEAD>
     
-    <TITLE>What about you?</TITLE>
+    <TITLE>Interactive page</TITLE>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
     
     </HEAD>
 
     <BODY>
+        
+
+        <script language="JavaScript"> 
+                        
+            function AskUsername() {
+                const username = prompt('Введите Ваше имя:');
+                return username;
+
+            }
+
+            function ShowMessage (username) {
+                let message = "Привет, " + username + " рады видеть Вас на нашем сайте!";
+                alert(message);
+         
+            }
+        
+        </script>
+
+        <script language="JavaScript"> 
        
+            const username = AskUsername();
+
+            ShowMessage(username);
+
+        </script>
+
     </BODY>
     
 </HTML>
